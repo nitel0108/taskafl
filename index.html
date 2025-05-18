@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFL Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AFL Task Tracker</h1>
+        <p>Stay organized and productive!</p>
+        <p>Current Date: <span id="current-date"></span></p>
+    </header>
+
+    <section class="user-info">
+        <p>Employee: John Doe</p>
+        <p>Email: john.doe@example.com</p>
+        <button onclick="alert('Change Password functionality not implemented.')">Change Password</button>
+        <button onclick="alert('Logout functionality not implemented.')">Logout</button>
+    </section>
+
+    <section class="task-controls">
+        <div class="priority-filter">
+            <label>Priority:</label>
+            <select>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+        <div class="assign-to">
+            <label>Assign to:</label>
+            <input type="text" placeholder="Enter name">
+        </div>
+        <button onclick="alert('Add Task functionality not implemented.')">Add Task</button>
+    </section>
+
+    <section class="task-filters">
+        <div>
+            <label>Date:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>Status:</label>
+            <select>
+                <option>All</option>
+                <option>Pending</option>
+                <option>Completed</option>
+            </select>
+        </div>
+        <div>
+            <label>Priority:</label>
+            <select>
+                <option>All</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+        <div>
+            <label>By:</label>
+            <select>
+                <option>All</option>
+                <option>John Doe</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="task-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Due Date</th>
+                    <th>Assigned By</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sample Task</td>
+                    <td>Medium</td>
+                    <td>2025-05-20</td>
+                    <td>John Doe</td>
+                    <td>Pending</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
